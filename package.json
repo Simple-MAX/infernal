@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc --project ./"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "gun": "^0.2020.1232",
