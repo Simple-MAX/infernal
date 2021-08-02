@@ -6,7 +6,7 @@ import { addMessage } from "./store/slices/messages";
 import { DateTime } from "luxon";
 
 const gun = Gun({
-  peers: ["http://localhost:3030/gun"],
+  peers: ["https://infinite-forest-74906.herokuapp.com/gun"],
 });
 
 function App() {
