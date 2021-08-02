@@ -64,7 +64,10 @@ function App() {
       <div className="flex flex-col overflow-scroll">
         <div className="flex flex-col w-2/7 justify-center items-center gap-4">
           {state.messages.map((info) => (
-            <div className="flex flex-row justify-between items-center w-full h-auto bg-gray-800 p-4 rounded-lg shadow-lg">
+            <div
+              key={info.message}
+              className="flex flex-row justify-between items-center w-full h-auto bg-gray-800 p-4 rounded-lg shadow-lg"
+            >
               <div className="flex flex-row items-center gap-4">
                 <img
                   className="h-16 w-16 rounded-full"
@@ -99,7 +102,7 @@ function App() {
           <input
             name="img"
             placeholder="image url"
-            value={formState.name}
+            value={formState.url}
             type="text"
             onChange={onChange}
             className="shadow appearance-none border rounded w-2/6 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
